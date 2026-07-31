@@ -11,7 +11,7 @@
       --text-main: #f4f4f5;
       --text-muted: #a1a1aa;
       --accent-gold: #d4af37;
-      --modal-bg: rgba(0, 0, 0, 0.9);
+      --modal-bg: rgba(0, 0, 0, 0.92);
     }
 
     * { box-sizing: border-box; }
@@ -114,7 +114,7 @@
     .badge-available { background: #166534; color: #4ade80; }
     .badge-sold { background: #7f1d1d; color: #fca5a5; }
 
-    /* Modal (Popup Window) */
+    /* Modal Popup */
     .modal {
       display: none;
       position: fixed;
@@ -200,53 +200,53 @@
 
   <main class="gallery-container">
 
-    <!-- PAINTING 1 -->
-    <div class="art-card" onclick="openModal('images/IMG_7832.jpg', 'Golden Retriever Portrait', 'Colored Pencil & Acrylic • 2024', '12 x 12 inches', 'Available', 'Inquire for Price')">
-      <div class="img-wrapper"><img src="images/IMG_7832.jpg" alt="Golden Retriever Portrait"></div>
+    <!-- Artwork 1 (IMG_7846) -->
+    <div class="art-card" onclick="openModal('images/IMG_7846.jpeg', 'Golden Retriever Portrait', 'Colored Pencil & Acrylic • 2025', '12 x 12 inches', 'Available', 'Inquire for Price')">
+      <div class="img-wrapper"><img src="images/IMG_7846.jpeg" alt="Golden Retriever Portrait"></div>
       <div class="art-info">
         <div class="art-title">Golden Retriever Portrait</div>
-        <div class="art-meta">Acrylic • 2024</div>
+        <div class="art-meta">Acrylic & Pencil • 2025</div>
         <span class="badge badge-available">Available</span>
       </div>
     </div>
 
-    <!-- PAINTING 2 -->
-    <div class="art-card" onclick="openModal('images/IMG_7836.jpg', 'Tropical Bird', 'Colored Pencil on Dark Paper • 2025', '10 x 10 inches', 'Available', '$250')">
-      <div class="img-wrapper"><img src="images/IMG_7836.jpg" alt="Tropical Bird"></div>
+    <!-- Artwork 2 (IMG_7836) -->
+    <div class="art-card" onclick="openModal('images/IMG_7836.jpeg', 'Whiskers & Light', 'Colored Pencil • 2025', '10 x 10 inches', 'Available', 'Inquire for Price')">
+      <div class="img-wrapper"><img src="images/IMG_7836.jpeg" alt="Whiskers & Light"></div>
       <div class="art-info">
-        <div class="art-title">Tropical Bird</div>
+        <div class="art-title">Whiskers & Light</div>
         <div class="art-meta">Colored Pencil • 2025</div>
         <span class="badge badge-available">Available</span>
       </div>
     </div>
 
-    <!-- PAINTING 3 -->
-    <div class="art-card" onclick="openModal('images/IMG_7838.jpg', 'Sea Turtle Odyssey', 'Mixed Media • 2025', '14 x 14 inches', 'Sold', 'Private Collection')">
-      <div class="img-wrapper"><img src="images/IMG_7838.jpg" alt="Sea Turtle Odyssey"></div>
+    <!-- Artwork 3 (IMG_7832) -->
+    <div class="art-card" onclick="openModal('images/IMG_7832.jpeg', 'Wildlife Artwork #1', 'Mixed Media • 2025', '12 x 12 inches', 'Available', 'Inquire for Price')">
+      <div class="img-wrapper"><img src="images/IMG_7832.jpeg" alt="Wildlife Artwork #1"></div>
       <div class="art-info">
-        <div class="art-title">Sea Turtle Odyssey</div>
+        <div class="art-title">Wildlife Artwork #1</div>
+        <div class="art-meta">Mixed Media • 2025</div>
+        <span class="badge badge-available">Available</span>
+      </div>
+    </div>
+
+    <!-- Artwork 4 (IMG_7838) -->
+    <div class="art-card" onclick="openModal('images/IMG_7838.jpeg', 'Wildlife Artwork #2', 'Mixed Media • 2025', '12 x 12 inches', 'Available', 'Inquire for Price')">
+      <div class="img-wrapper"><img src="images/IMG_7838.jpeg" alt="Wildlife Artwork #2"></div>
+      <div class="art-info">
+        <div class="art-title">Wildlife Artwork #2</div>
+        <div class="art-meta">Mixed Media • 2025</div>
+        <span class="badge badge-available">Available</span>
+      </div>
+    </div>
+
+    <!-- Artwork 5 (IMG_7840) -->
+    <div class="art-card" onclick="openModal('images/IMG_7840.jpeg', 'Wildlife Artwork #3', 'Mixed Media • 2025', '12 x 12 inches', 'Sold', 'Private Collection')">
+      <div class="img-wrapper"><img src="images/IMG_7840.jpeg" alt="Wildlife Artwork #3"></div>
+      <div class="art-info">
+        <div class="art-title">Wildlife Artwork #3</div>
         <div class="art-meta">Mixed Media • 2025</div>
         <span class="badge badge-sold">Sold</span>
-      </div>
-    </div>
-
-    <!-- PAINTING 4 -->
-    <div class="art-card" onclick="openModal('images/IMG_7840.jpg', 'Whiskers & Light', 'Colored Pencil • 2025', '12 x 12 inches', 'Available', '$300')">
-      <div class="img-wrapper"><img src="images/IMG_7840.jpg" alt="Whiskers & Light"></div>
-      <div class="art-info">
-        <div class="art-title">Whiskers & Light</div>
-        <div class="art-meta">Colored Pencil • 2025</div>
-        <span class="badge badge-available">Available</span>
-      </div>
-    </div>
-
-    <!-- PAINTING 5 -->
-    <div class="art-card" onclick="openModal('images/IMG_7846.jpg', 'Whiskers & Light', 'Colored Pencil • 2025', '12 x 12 inches', 'Available', '$300')">
-      <div class="img-wrapper"><img src="images/IMG_7846.jpg" alt="Whiskers & Light"></div>
-      <div class="art-info">
-        <div class="art-title">Whiskers & Light</div>
-        <div class="art-meta">Colored Pencil • 2025</div>
-        <span class="badge badge-available">Available</span>
       </div>
     </div>
 
@@ -267,7 +267,7 @@
           <hr style="border-color: #3f3f46; margin: 20px 0;">
           <p id="modalStatus"></p>
         </div>
-        <a id="modalInquire" href="mailto:artist@example.com" class="inquire-btn">Inquire About This Piece</a>
+        <a id="modalInquire" href="#" class="inquire-btn">Inquire About This Piece</a>
       </div>
     </div>
   </div>
