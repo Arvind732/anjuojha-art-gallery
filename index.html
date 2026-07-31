@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artist Showcase</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 40px 0;
+    }
+    h1 { margin: 0; font-size: 2.5rem; }
+    p.bio { color: #666; max-width: 600px; margin: 10px auto; }
+    
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .art-card {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .art-card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      display: block;
+    }
+    .art-info {
+      padding: 15px;
+    }
+    .art-info h3 { margin: 0 0 5px 0; font-size: 1.1rem; }
+    .art-info p { margin: 0; color: #777; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Artist Name</h1>
+    <p class="bio">Original oil paintings, watercolors, and digital artwork.</p>
+  </header>
+
+  <main class="gallery">
+    <!-- Repeat this block for each painting -->
+    <div class="art-card">
+      <img src="images/painting1.jpg" alt="Title of Painting 1">
+      <div class="art-info">
+        <h3>Sunset in Acrylic</h3>
+        <p>Oil on Canvas • 2024</p>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img src="images/painting2.jpg" alt="Title of Painting 2">
+      <div class="art-info">
+        <h3>Abstract Horizons</h3>
+        <p>Mixed Media • 2025</p>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
